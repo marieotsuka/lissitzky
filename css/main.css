@@ -1,0 +1,401 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+ body{
+    position: relative;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: black;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: black;
+}
+
+#title{
+    position: absolute;
+    top: 50%;
+    height: 300px;
+    border: 1px solid #222;
+    text-align: center;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+#left {
+  position:absolute;
+  z-index:4;
+  left: 0;
+  top: 0px;
+  width: 35%;
+  margin: 0;
+  padding: 0;
+}
+
+#left .content{
+    padding: 0 1rem 0 6rem;
+}
+
+#left p{
+    max-width: 25rem;
+}
+
+#right {
+    position: fixed;
+    bottom: 0px;
+    z-index: 5;
+    left: 35%;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+#right .content{
+    padding: 10rem 6rem 0 0;
+}
+.content{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.chunk{
+    height: 100vh;
+}
+
+#right .chunk{
+    border-left: 3px solid #222;
+    padding-left: 1rem;
+}
+
+
+#imglayer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+
+/*TYPOGRAPHY*/
+
+body{
+    font-family: "Georgia", Times, serif;
+    font-weight: 100;
+}
+
+p{
+    margin: 0;
+}
+
+p.top{
+    position: absolute;
+    top: 0;
+    left: 6vw;
+    width: 88vw;
+    font-size: 7vw;
+    letter-spacing: -2px;
+    line-height: 1;
+    word-break: break-all;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.top-title {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    background: #000;
+    color: white;
+    border: 3px solid #222;
+    z-index: 20;
+    padding: 1rem;
+}
+
+.top-title .info{
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.title {
+    position: fixed;
+    width: 500px;
+    padding: 10px;
+    text-align: right;
+}
+
+#left .title{
+    bottom: 250px;
+}
+
+#right .title{
+    top: 250px;
+}
+
+.info {
+    font-size: .8rem;
+}
+
+#left .info{
+    max-width: none;
+}
+
+
+.rotatel{
+    -webkit-transform: rotate(-90deg);
+    right: -220px;
+}
+
+.rotater{
+    -webkit-transform: rotate(90deg);
+    left: -220px;
+}
+
+
+em {
+    font-style: normal;
+    font-weight: 900;
+    font-variant-caps: all-small-caps;
+      -moz-font-feature-settings: "c2sc", "smcp";
+      -webkit-font-feature-settings: "c2sc", "smcp";
+      font-feature-settings: "c2sc", "smcp";
+    letter-spacing: .5px;
+}
+
+.example {
+    font-style: italic;
+}
+
+
+.num{
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#right{
+    font-size: 2em;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+.insert{
+    font-weight: 900;
+    font-variant-caps: all-small-caps;
+    letter-spacing: .5px;
+}
+
+h1 .insert{
+    font-variant-caps: normal;
+    text-transform: uppercase;
+}
+
+
+a{
+    color: rgb(255,60,0);
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+    background: rgb(255,60,0);
+}
+
+/*images and labels*/
+#imglayer div.fig{
+    position: absolute;
+    display: none;
+}
+
+#imglayer img{
+    max-width: 100%;
+}
+
+
+.sitename {
+    font-family: "tenso", sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: rgb(255,60,0);
+    background: #fff;
+    margin-left: 100px;
+}
+
+.caption{
+    font-size: .8rem;
+    background: #fff;
+    margin-left: 100px;
+    margin-bottom: 5px;
+}
+
+
+/*graphics*/
+/*#square {
+    width: 10px;
+    height: 10px;
+    background: #222;
+    float: right;
+}*/
+.circle{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: rgb(255,60,0);
+    left: 10em;
+}
+
+.tab{
+    margin-left: 1rem;
+}
+
+#anim {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-top: 20%;
+}
+
+#anim .horizontal, #anim .perpendicular, #anim .diagonal{
+    position: relative;
+    width: 800px;
+    border-top: 10px solid rgb(255, 60, 0);
+    display: none;
+}
+
+.diagonal {
+    left: 200px;
+    bottom: -200px;
+    width: 600px;
+    transform: rotate(-45deg); 
+}
+
+#anim .curve{
+    position: relative;
+    width: 500px; 
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-right: 10px solid rgb(255,60,0);
+    top: -50%;
+    left: 50%;
+    display: none;
+}
+
+@keyframes dx{
+    from { transform: translateX(0); opacity: 0;}
+    to { transform: translateX(3222px); opacity: 100%;}
+}
+
+@keyframes dy{
+    from { transform: translateY(-1222px) rotate(90deg); opacity: 0;}
+    to { transform: translateY(1222px) rotate(90deg); opacity: 100%;}
+}
+
+@keyframes ddi{
+    from {  left: 100px; bottom: -500px; opacity: 0;}
+    to { left: 1600px; bottom: 1222px; opacity: 100%;}
+}
+
+@keyframes dr{
+    0% { transform: rotate(0deg); opacity: 0;}
+    100% { transform: rotate(-300deg); opacity: 100%;}
+}
+
+
+#anim .horizontal{
+    animation: dx 2s ease-in-out infinite;
+}
+
+#anim .perpendicular{
+    animation: dy 2s ease-in-out infinite;
+}
+
+#anim .diagonal{
+    animation: ddi 2s ease-in-out infinite;
+}
+
+#anim .curve{
+    animation: dr 2s ease-in-out infinite;
+}
+
+.mobile-titles{
+    display: none;
+}
+@media screen and (max-width: 660px){
+    p.top{
+        width: auto;
+        padding-right: 1rem;
+    }
+
+    .title{
+        display: none;
+    }
+    
+    .mobile-titles.top{
+        height: 100vh;
+    }
+
+    .mobile-titles.bottom{
+        margin-left: 1rem;
+    }
+    .mobile-titles{
+        display: block;
+    }
+
+    #left, #right{
+        position: static;
+        width: 100%;
+    }
+    #left .content{
+        padding: 0 1rem;
+    }
+    #right .content{
+       padding: 0 1rem;
+       font-size: 1.5rem;
+    }
+
+    #right .content .chunk:last-child{
+        display: none;
+    }
+}
